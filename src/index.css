@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@import '@fontsource/roboto';
+@import url('https://cdn.jsdelivr.net/gh/sahibjotsaggu/SF-Pro-Fonts@latest/sf-pro.css');
+
+/* @import "tailwindcss";
+@import '@fontsource/roboto';
+@import url('https://cdn.jsdelivr.net/gh/sahibjotsaggu/SF-Pro-Fonts@latest/sf-pro.css');
+
+:root {
+  --font-sans: 'SF Pro Display', sans-serif;
+  --font-roboto: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+} */
