@@ -1,7 +1,7 @@
 import React from "react";
 import CrossIcon from "../assets/CrossIcon";
 
-const RenameModal = ({ isOpen, onClose, renameValue, setRenameValue, onRename }) => {
+const RenameModal = ({ isOpen, onClose, renameValue, setRenameValue, onRename, isSubHeader=false }) => {
   if (!isOpen) return null;
 
   return (
@@ -28,7 +28,7 @@ const RenameModal = ({ isOpen, onClose, renameValue, setRenameValue, onRename })
           />
         </div>
 
-        <div className="mt-4 px-6">
+       {!isSubHeader && <div className="mt-4 px-6">
           <label className="text-sm font-medium">
           {renameValue} ID <span className="text-red-500">*</span>
           </label>
@@ -38,7 +38,7 @@ const RenameModal = ({ isOpen, onClose, renameValue, setRenameValue, onRename })
             onChange={(e) => setRenameValue(e.target.value)}
             className="w-full border border-[#CCCCCC] rounded-lg p-2 mt-1"
           />
-        </div>
+        </div>}
         <div className="flex justify-end mt-6 space-x-4 p-4 border-t border-t-[#EEEEEE]">
           <button onClick={onClose} className="text-red-500 font-medium">
             Cancel

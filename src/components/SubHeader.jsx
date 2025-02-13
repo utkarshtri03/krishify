@@ -62,6 +62,7 @@ const SubHeader = ({ tabs, setTabs, onTabClick }) => {
 
       {/* Rename Modal */}
       <RenameModal
+        isSubHeader={true}
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
         renameValue={renameValue}
